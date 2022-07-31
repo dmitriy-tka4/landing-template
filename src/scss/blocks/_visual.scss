@@ -1,0 +1,40 @@
+.visual {
+  background-image: url("images/bg-visual.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__overlay {
+    padding: 90px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  &__title {
+    margin: 0 0 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font: 700 24px/30px $font-primary;
+    color: white;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font: 400 18px/22px $font-primary;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  @media (min-width: $desktop) {
+    &__overlay {
+      padding: 170px 0;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    &__title {
+      font: 700 44px/50px $font-primary;
+    }
+
+    &__subtitle {
+      font: 400 18px/24px $font-primary;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.contacts {
+  padding: 30px 0;
+  background-color: white;
+
+  h3 {
+    margin: 0 0 20px;
+    font: 400 28px/34px $font-primary;
+    color: $color-blue;
+  }
+
+  p {
+    margin: 0 0 20px;
+    font: 400 18px/24px $font-primary;
+    color: #111;
+
+    span {
+      color: $color-gray;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    font: 400 18px/20px $font-primary;
+    color: $color-blue;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-green;
+    }
+
+    &.contacts__phone-link {
+      text-decoration: none;
+      color: #111;
+    }
+  }
+
+  &__cart {
+    margin: 40px 0 0;
+
+    iframe {
+      width: 100% !important;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 50px 0;
+  }
+}

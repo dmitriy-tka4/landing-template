@@ -1,0 +1,66 @@
+.header {
+  margin: 0;
+  padding: 20px 0;
+  max-width: 100%;
+  overflow: hidden;
+
+  &__row {
+  }
+
+  &__logo-col {
+    padding: 0 0 20px;
+  }
+
+  &__buttons-col {
+    text-align: center;
+  }
+
+  &__btn {
+    display: inline-block;
+  }
+
+  &__btn {
+    display: inline-block;
+    margin: 0 0 5px;
+    padding: 8px 20px;
+    border: 1px solid $color-blue;
+    text-decoration: none;
+    font: 400 14px/20px $font-primary;
+    color: $color-blue;
+    transition: all 0.5s ease;
+
+    &_blue {
+      color: white;
+      background-color: $color-blue;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 20px 0;
+
+    &__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 100px;
+    }
+
+    &__logo-col {
+      padding: 0;
+    }
+
+    &__buttons-col {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__btn {
+      margin: 0 0 0 10px;
+    }
+  }
+}

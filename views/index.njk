@@ -1,0 +1,99 @@
+{% extends "layouts/base.njk" %}
+{% block content %}
+  <section class="visual">
+    <div class="visual__overlay">
+      <div class="container">
+        <div class="visual__title">
+          Слоган
+        </div>
+        <div class="visual__subtitle">
+          Призыв к действию или кнопка
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="photos">
+      <div class="container">
+        <div class="section-title">
+          Фотографии
+        </div>
+
+        <div class="photos__list" id="lightgallery">
+          <a href="/images/photo-01.jpg" class="photos__item"><img src="/images/photo-01.jpg"></a>
+          <a href="/images/photo-02.jpg" class="photos__item"><img src="/images/photo-02.jpg"></a>
+          <a href="/images/photo-03.jpg" class="photos__item"><img src="/images/photo-03.jpg"></a>
+          <a href="/images/photo-04.jpg" class="photos__item"><img src="/images/photo-04.jpg"></a>
+          <a href="/images/photo-05.jpg" class="photos__item"><img src="/images/photo-05.jpg"></a>
+          <a href="/images/photo-06.jpg" class="photos__item"><img src="/images/photo-06.jpg"></a>
+          <a href="/images/photo-07.jpg" class="photos__item"><img src="/images/photo-07.jpg"></a>
+          <a href="/images/photo-08.jpg" class="photos__item"><img src="/images/photo-08.jpg"></a>
+        </div>
+    </div>
+  </section>
+
+  <section class="feedback" id="js-feedback">
+      <div class="container">
+        <div class="section-title">
+          Задать вопрос
+        </div>
+
+        <form class="form js-form" name="order" novalidate>
+          <div class="form__row">
+            <div class="form__col">
+              <div class="form__control">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <div class="form__error hidden">Это поле обязательное</div>
+              </div>
+              <div class="form__control">
+                <input type="text" name="contact" placeholder="Телефон или email" required>
+                <div class="form__error hidden">Это поле обязательное</div>
+              </div>
+              <div class="form__control">
+                <textarea name="message" placeholder="Ваше сообщение"></textarea>
+              </div>
+              <div class="form__control">
+                <button type="submit">Отправить</button>
+              </div>
+            </div>
+            <div class="form__col form__col_img">
+              <img src="/images/feedback.svg">
+            </div>
+          </div>
+        </form>
+
+        <div class="feedback__success js-success hidden">
+          Отлично, ваше сообщение отправлено!<br>
+          Мы свяжемся с вами в ближайшее время
+        </div>
+
+        <div class="feedback__error js-error hidden">
+          Что-то пошло не так, возникла ошибка!<br>
+          Обновите страницу и попробуйте снова
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="js-contacts">
+      <div class="container">
+        <div class="section-title">
+          Контакты
+        </div>
+
+        <p>
+          <span>Адрес:</span><br> Россия, г. Новосибирск</p>
+        <p>
+          <span>Телефон:</span><br>
+          <a href="tel:+7-000-000-0000" class="contacts__phone-link">+7-000-000-0000</a>
+        </p>
+        <p>
+          <span>Email:</span><br>
+          <a href="mailto:mail@example.com">mail@example.com</a>
+        </p>
+        {# <div class="contacts__cart">
+          cart..
+        </div> #}
+      </div>
+    </section>
+
+{% endblock %}

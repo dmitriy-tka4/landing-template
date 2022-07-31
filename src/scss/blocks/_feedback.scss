@@ -1,0 +1,40 @@
+.feedback {
+  padding: 30px 0;
+  background-color: $color-blue;
+
+  .section-title {
+    color: #fff;
+  }
+
+  p {
+    margin: 0 20px 20px;
+    font: 400 18px/24px $font-primary;
+    color: $color-light;
+  }
+
+  &__success {
+    margin: 10px 0 50px;
+    padding: 10px 0 10px 87px;
+    font: 400 18px/24px $font-primary;
+    color: white;
+    background-image: url("images/icon-success.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 64px 64px;
+  }
+
+  &__error {
+    margin: 10px 0 50px;
+    padding: 10px 0 10px 87px;
+    font: 400 18px/24px $font-primary;
+    color: white;
+    background-image: url("images/icon-error.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 64px 64px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 50px 0;
+  }
+}

@@ -1,0 +1,77 @@
+.form {
+  &__row {
+  }
+
+  &__col {
+    &_img {
+      display: none;
+    }
+  }
+
+  &__control {
+    margin: 0 0 20px;
+  }
+
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 15px 20px;
+    font: 400 16px/20px $font-primary;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+
+    &.error {
+      border: 1px solid crimson;
+    }
+  }
+
+  textarea {
+    min-height: 124px;
+    resize: none;
+  }
+
+  &__error {
+    padding: 10px 20px 0;
+    font: 400 14px/16px $font-primary;
+    color: rgb(221, 178, 187);
+  }
+
+  button {
+    display: inline-block;
+    padding: 12px 22px;
+    text-decoration: none;
+    font: 400 16px/20px $font-primary;
+    color: white;
+    background-color: $color-green;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #057c6a;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &__row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__col {
+      flex: 0 0 48%;
+
+      &_img {
+        display: block;
+
+        img {
+          max-width: 60%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="/lightgallery/css/lightgallery.min.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__row">
+          <div class="header__logo-col">
+            <div class="logo">
+              <div class="logo__name">
+                <span>Landing</span> template
+              </div>
+              <div class="logo__subtitle">
+                Шаблон одностраничного сайта
+              </div>
+            </div>
+          </div>
+          <div class="header__buttons-col">
+            <a href="#" class="header__btn js-contacts-link">Контакты</a>
+            <a href="#js-feedback" class="header__btn header__btn_blue js-feedback-link">Обратная связь</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      {% block content %}
+        Контент не загружен..
+      {% endblock %}
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        &copy; 2022 - Landing template
+      </div>
+    </footer>
+
+    <script src="/lightgallery/js/lightgallery.min.js"></script>
+    <script src="/bundle.js"></script>
+  </body>
+</html>

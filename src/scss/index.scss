@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+// minireset
+// @import "../../node_modules/minireset.css/minireset.sass";
+@import "minireset.css/minireset.sass";
+
+// lightgallery
+// FIXME: есть ссылки на иконочные шрифты, Webpack их не видит при таком импорте - разбираться с настройкой Webpack
+// пока подключил файл CSS через CDN в base.njk
+// @import "lightgallery/css/lightgallery-bundle.min.css";
+// @import "../../node_modules/lightgallery/css/lightgallery-bundle.min.css";
+
+// base
+@import "_variables.scss";
+@import "_main.scss";
+
+// blocks
+@import "blocks/_contacts.scss";
+@import "blocks/_container.scss";
+@import "blocks/_error-page.scss";
+@import "blocks/_feedback.scss";
+@import "blocks/_footer.scss";
+@import "blocks/_form.scss";
+@import "blocks/_header.scss";
+@import "blocks/_logo.scss";
+@import "blocks/_photos.scss";
+@import "blocks/_section-title.scss";
+@import "blocks/_visual.scss";
